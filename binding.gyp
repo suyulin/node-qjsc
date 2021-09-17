@@ -23,7 +23,8 @@
         "<!(node -p \"require('node-addon-api').include_dir\")",
       ],
       "defines": [
-        'CONFIG_VERSION=\"2021-03-27\"'
+        'CONFIG_VERSION=\"2021-03-27\"',
+        "NAPI_DISABLE_CPP_EXCEPTIONS"
       ],
       'cflags!': [ '-fexceptions' ],
       'cflags_cc!': [ '-fexceptions', ],
